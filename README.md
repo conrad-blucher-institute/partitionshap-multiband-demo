@@ -8,5 +8,5 @@ These notebooks use our [SHAP fork](https://github.com/conrad-blucher-institute/
 1. [`PartitionShap`: ImageNet (RGB) demo](PartitionSHAP_ImageNet.ipynb)
 2. [`PartitionShap`: EuroSAT (RGB) demo](EuroSAT_RGB.ipynb)   **work in progress**
 3. `PartitionShap`: EuroSAT (13-band) demo
-  - [Training notebook](EuroSAT_All_Train.ipynb)  **work in progress**
-  - [Evaluation notebook](EuroSAT_All_Eval.ipynb)  **work in progress**
+    * [Training notebook](EuroSAT_All_Train.ipynb)  **work in progress**
+    * [Evaluation notebook](EuroSAT_All_Eval.ipynb)  **work in progress**
