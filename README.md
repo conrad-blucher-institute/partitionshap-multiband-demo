@@ -1,5 +1,5 @@
-# shap_multiband
-Exploring PartitionShap on raster datasets or arbitrary number of bands/channels
+# `PartitionShap` demo: channel-wise explanations of raster-based machine learning models
+Exploring PartitionShap on raster datasets of an arbitrary number of bands/channels
 
 These notebooks use our [SHAP fork](https://github.com/conrad-blucher-institute/shap) with modifications to make it easier to use and visualize multi-channel explanations. 
 The EuroSAT notebooks use [TorchSat](https://github.com/sshuair/torchsat), a library for working with PyTorch models whose inputs are rasters with arbitraty number of channels. 
