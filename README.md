@@ -7,7 +7,7 @@ The EuroSAT notebooks use [TorchSat](https://github.com/sshuair/torchsat), a lib
 ### Notebooks:
 
 1. [`PartitionShap`: ImageNet (RGB) demo](PartitionSHAP_ImageNet.ipynb)
-2. [`PartitionShap`: EuroSAT (RGB) demo](EuroSAT_RGB.ipynb)   **work in progress**
+2. [`PartitionShap`: EuroSAT (RGB) demo](PartitionShap_EuroSAT_RGB.ipynb)   **work in progress**
 3. `PartitionShap`: EuroSAT (13-band) demo
     * [Training notebook](EuroSAT_All_Train.ipynb)  **work in progress**
     * [Evaluation notebook](EuroSAT_All_Eval.ipynb)  **work in progress**
