@@ -1,14 +1,15 @@
 # Visualize 3D SHAP values
-# 
+#
 # PartitionShap, among other programs, may assign SHAP values
 # to each (x, y, z) cell in a 3D model input.
-# For example, an image classification model may have RGB inputs 
-# and we are interested in the SHAP contribution of superpixels 
+# For example, an image classification model may have RGB inputs
+# and we are interested in the SHAP contribution of superpixels
 # within each color channel
 
 import numpy as np
 import pyvista as pv
 from optparse import OptionParser
+from matplotlib.colors import ListedColormap
 
 def buildGrid(values, origin=(0, 0, 0), spacing=(10, 10, 10)):
     # Spatial reference
@@ -46,7 +47,7 @@ def main():
     inNPZ = None  # Numpy archive
     values = None # SHAP values
 
-    
+
     # Check: can open Numpy file?
     try:
         inNPZ = np.load(inFile)
@@ -58,28 +59,65 @@ def main():
     # Check: can read data from name?
     try:
         values = inNPZ[dataName]
-    except: 
+    except:
         print("{} is not a file in the numpy (.npz) archive".format(dataName))
         exit(1)
 
-    # Check: is data 3D? 
-    print(values.shape)
+    # Check: is data 3D?
+    if (len(values.shape) != 3):
+        print("Only supports 3 dimensions. Detected shape of {}".format(values.shape))
+        exit(1)
+
+    # Calc min, max
+    minValue = np.min(values)
+    maxValue = np.max(values)
 
     print("")
     print("SHAP 3D viewer")
     print("--------------")
-    print("Values file: {}".format(inFile))
-    print("  Data name: {}".format(dataName))
+    print("values file: {}".format(inFile))
+    print("  data name: {}".format(dataName))
     print("      shape: {}".format(values.shape))
+    print("      range: ({:.4f}, {:.4f})".format(minValue, maxValue))
+    print("")
+
+    percent = 0.5
+
+
 
     # Create grid
     grid = buildGrid(values)
 
+    tgrid = grid.threshold_percent([0.4, 0.6], invert = True)
+
     p = pv.Plotter()
     # Very faint grid mesh
-    p.add_mesh(grid, style="wireframe", label="SHAP", opacity=0.1)
-    # Interactive clipping
-    p.add_mesh_clip_box(grid)
+    p.add_mesh(grid,
+               style="wireframe",
+               opacity=0.075,
+               cmap="seismic",
+               )
+
+    #p.add_mesh_clip_plane(grid,
+    #                      cmap="seismic",
+    #                      assign_to_axis='z',
+    #                      invert=True)
+
+
+    p.add_mesh_threshold(grid,
+                         invert=True,
+                         pointa=(0.1, 0.9),
+                         pointb=(0.45, 0.9),
+                         title = "Lower threshold",
+                         cmap="seismic")
+
+    p.add_mesh_threshold(grid,
+                         pointa=(0.55, 0.9),
+                         pointb=(0.9, 0.9),
+                         invert=False,
+                         title = "Higher threshold",
+                         cmap="seismic")
+
     p.show()
 
     return 0
