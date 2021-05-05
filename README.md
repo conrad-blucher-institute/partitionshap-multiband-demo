@@ -14,4 +14,17 @@ The EuroSAT notebooks use [TorchSat](https://github.com/sshuair/torchsat), a lib
 
 ### 3D SHAP viewer tool (prototype): 
 
+    python SHAP_3D_viewer.py --help
+    Usage: SHAP_3D_viewer.py [options]
+
+    Options:
+      -h, --help            show this help message and exit
+      -f FILE, --file=FILE  Path to 3D SHAP values (.npz)
+      -d DATA_NAME, --data_name=DATA_NAME
+                            Name of SHAP values in the input SHAP values (.npz)
+                            file.
+      -e, --show_edges      Show edges of grid elements
+
 [<img src="play_video.png">](https://youtu.be/kNFY6ff996E)
+
+
