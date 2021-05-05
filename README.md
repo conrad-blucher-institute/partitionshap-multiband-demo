@@ -11,3 +11,7 @@ The EuroSAT notebooks use [TorchSat](https://github.com/sshuair/torchsat), a lib
    * pretrained weights: https://drive.google.com/file/d/14BYvrjem4dbmkmibmmSD2cDq2ZvStfVG/view?usp=sharing
 3. [`PartitionShap`: EuroSAT (13-band) demo](PartitionShap_EuroSAT_13bands.ipynb)
    * pretrained weights: https://drive.google.com/file/d/1gYtOpYdMCCMxCkEhRzK1dDyE6tOMIOKa/view?usp=sharing
+
+### 3D SHAP viewer tool (prototype): 
+
+[<img src="play_video.png">](https://youtu.be/kNFY6ff996E)
