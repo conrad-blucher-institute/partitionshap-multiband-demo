@@ -16,7 +16,7 @@ The EuroSAT notebooks use [TorchSat](https://github.com/sshuair/torchsat), a lib
       commit = {5807c4c6eb452b31b88e61276ec7a56b70a61e35}
     }
 
-### Notebooks:
+### Notebooks
 
 1. [`PartitionShap`: ImageNet (RGB) demo](PartitionSHAP_ImageNet.ipynb)
 2. [`PartitionShap`: EuroSAT (RGB) demo](PartitionShap_EuroSAT_RGB.ipynb)
@@ -24,7 +24,7 @@ The EuroSAT notebooks use [TorchSat](https://github.com/sshuair/torchsat), a lib
 3. [`PartitionShap`: EuroSAT (13-band) demo](PartitionSHAP_EuroSAT_13bands.ipynb)
    * pretrained weights: https://drive.google.com/file/d/1gYtOpYdMCCMxCkEhRzK1dDyE6tOMIOKa/view?usp=sharing
 
-### 3D SHAP viewer tool (prototype): 
+### 3D SHAP viewer tool (prototype)
 
     python SHAP_3D_viewer.py --help
     Usage: SHAP_3D_viewer.py [options]
