@@ -4,6 +4,18 @@ Exploring PartitionShap on raster datasets of an arbitrary number of bands/chann
 These notebooks use our [SHAP fork](https://github.com/conrad-blucher-institute/shap) with modifications to make it easier to use and visualize multi-channel explanations. 
 The EuroSAT notebooks use [TorchSat](https://github.com/sshuair/torchsat), a library for working with PyTorch models whose inputs are rasters with arbitraty number of channels. 
 
+#### Citation
+
+@misc{ChannelWisePartitionShap,
+  author = {Krell, E. and Friesen, J. and Judge, J.},
+  title = {Partitionshap Multiband Demo},
+  year = {2021},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/conrad-blucher-institute/partitionshap-multiband-demo}},
+  commit = {5807c4c6eb452b31b88e61276ec7a56b70a61e35}
+}
+
 ### Notebooks:
 
 1. [`PartitionShap`: ImageNet (RGB) demo](PartitionSHAP_ImageNet.ipynb)
@@ -28,3 +40,9 @@ The EuroSAT notebooks use [TorchSat](https://github.com/sshuair/torchsat), a lib
 [<img src="play_video.png">](https://youtu.be/kNFY6ff996E)
 
 
+### Todo
+
+- [ ] Evan: Use test instead of validation data for XAI runs in notebooks -> not currently repoducable since will choose a random validation case
+- [ ] Josh: Add colab notebook with RGB & RGB+NIR model train, test, PartitionShap results (other XAI not is not for this repo!)
+- [ ] Juliana: Add updated 3D tool, update readme with example for both `.npz` and `.pickle` files
+- [ ] Does it make sense to "publish" the poster by including the PDF in this repo?
