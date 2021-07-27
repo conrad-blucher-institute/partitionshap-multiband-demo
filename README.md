@@ -6,15 +6,15 @@ The EuroSAT notebooks use [TorchSat](https://github.com/sshuair/torchsat), a lib
 
 #### Citation
 
-@misc{ChannelWisePartitionShap,
-  author = {Krell, E. and Friesen, J. and Judge, J.},
-  title = {Partitionshap Multiband Demo},
-  year = {2021},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/conrad-blucher-institute/partitionshap-multiband-demo}},
-  commit = {5807c4c6eb452b31b88e61276ec7a56b70a61e35}
-}
+    @misc{ChannelWisePartitionShap,
+      author = {Krell, E. and Friesen, J. and Judge, J.},
+      title = {Partitionshap Multiband Demo},
+      year = {2021},
+      publisher = {GitHub},
+      journal = {GitHub repository},
+      howpublished = {\url{https://github.com/conrad-blucher-institute/partitionshap-multiband-demo}},
+      commit = {5807c4c6eb452b31b88e61276ec7a56b70a61e35}
+    }
 
 ### Notebooks:
 
