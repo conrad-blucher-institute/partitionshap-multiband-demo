@@ -43,5 +43,3 @@ The EuroSAT notebooks use [TorchSat](https://github.com/sshuair/torchsat), a lib
 
 - [ ] Evan: Use test instead of validation data for XAI runs in notebooks -> not currently repoducable since will choose a random validation case
 - [ ] Josh: Add colab notebook with RGB & RGB+NIR model train, test, PartitionShap results (other XAI not is not for this repo!)
-- [ ] Juliana: Add updated 3D tool, update readme with example for both `.npz` and `.pickle` files
-- [ ] Does it make sense to "publish" the poster by including the PDF in this repo?
