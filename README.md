@@ -6,14 +6,12 @@ The EuroSAT notebooks use [TorchSat](https://github.com/sshuair/torchsat), a lib
 
 #### Citation
 
-    @misc{ChannelWisePartitionShap,
-      author = {Krell, E. and Friesen, J. and Judge, J.},
-      title = {Partitionshap Multiband Demo},
-      year = {2021},
-      publisher = {GitHub},
-      journal = {GitHub repository},
-      howpublished = {\url{https://github.com/conrad-blucher-institute/partitionshap-multiband-demo}},
-      commit = {5807c4c6eb452b31b88e61276ec7a56b70a61e35}
+    @inproceedings{krell2022explaining,
+      title={Explaining Complex 3D Atmospheric CNNs Using SHAP-Based Channel-wise XAI Techniques with Interactive 3D Visualization},
+      author={Krell, Evan and Kamangir, Hamid and Friesen, Josh and Judge, Julianna and Collins, Waylon G and King, Scott Alan and Tissot, Philippe E},
+      booktitle={102nd American Meteorological Society Annual Meeting},
+      year={2022},
+      organization={AMS}
     }
 
 ### Notebooks
