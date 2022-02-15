@@ -25,6 +25,9 @@ The EuroSAT notebooks use [TorchSat](https://github.com/sshuair/torchsat), a lib
 
 ### 3D SHAP viewer tool (prototype)
 
+A simple prototype of the viewer is included for completeness. 
+Further development of this tool occurs in the [xai-raster-vis-tools](https://github.com/conrad-blucher-institute/xai-raster-vis-tools) repo.
+
     python SHAP_3D_viewer.py --help
     Usage: SHAP_3D_viewer.py [options]
 
